@@ -1,0 +1,6 @@
+{
+  "name": "Study Eye Alarm",
+  "description": "An intelligent eye-monitoring alarm that detects closed eyes using your webcam and rings a loud custom synthesizer to keep you awake during late-night study sessions.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

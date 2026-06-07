@@ -1,0 +1,54 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: #0A0B0D; /* Sleek professional graphite background */
+  color: #E2E8F0; /* Gray-200 slate text */
+  font-family: var(--font-sans);
+}
+
+/* Custom fade-in and warning pulsate frames with deep red alert accents */
+@keyframes pulseRed {
+  0%, 100% { background-color: rgba(220, 38, 38, 0.35); }
+  50% { background-color: rgba(220, 38, 38, 0.1); }
+}
+
+.animate-pulse-red {
+  animation: pulseRed 1s infinite alternate;
+}
+
+@keyframes scanLineAnimation {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.scan-line {
+  animation: scanLineAnimation 3s linear infinite;
+}
+
+/* Scrollbar styling for professional logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
